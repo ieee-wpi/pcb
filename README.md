@@ -1,2 +1,2 @@
-# pcb
-Materials for the PCB Design Class run by the WPI IEEE Student Chapter
+## IEEE PCB Workshop
+Welcome! Here you can find all the materials for our class.
