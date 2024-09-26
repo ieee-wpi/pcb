@@ -17,9 +17,10 @@ Recordings of lectures can be found [here](https://echo360.org/collection/4c2d5c
 ### Repo Structure:
 | Folder      	  | Contents		            |
 | --          	  |       -------- 			    |
-| `sample_board`  | Sample WPI Board Design     |
+| `datasheets`    | Datasheets for major parts  |
+| `sample_board`  | Sample board design         |
 | `slides`        | PDFs of slides	          	|
-| `starter_board` | Starter template board file | 
+| `starter_board` | Starter template design     | 
 | `starter_code`  | Starter code file(s)	    |
 
 ## Getting Started
