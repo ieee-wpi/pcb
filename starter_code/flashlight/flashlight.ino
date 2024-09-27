@@ -1,4 +1,4 @@
-// Compile for Arduino Leonardo
+/$ brew install ripgrep/ Compile for Arduino Leonardo
 #include <FastLED.h>
 
 // How many leds in your strip?
