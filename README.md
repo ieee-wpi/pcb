@@ -30,4 +30,4 @@ Not sure where to get started on your design? You'll need to download and instal
 To get started on your own board design, open up the `.kicad_pro` file in `/starter_board` in KiCad.
 
 ### Code
-To program your board, open up the `cylon.ino` file in `/starter_code/cylon` in the Arduino IDE.
+To program your board, open up the `rainbow.ino` file in `/starter_code/rainbow` in the Arduino IDE.
