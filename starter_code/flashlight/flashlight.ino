@@ -1,18 +1,28 @@
-/$ brew install ripgrep/ Compile for Arduino Leonardo
+/*
+* Essentials of PCB Design
+* Flashlight: Turns on all LEDs to white at full brightness
+* This is very bright and will use a lot of current!
+*
+* Track 1 boards compile for Arduino Leonardo
+* Requirements:
+* - FastLED library
+*/
+
 #include <FastLED.h>
 
-// How many leds in your strip?
+// You may need to change these for your board
 #define NUM_LEDS 27
 #define DATA_PIN 5
 
-// Define the array of leds
+// Array of LEDs
 CRGB leds[NUM_LEDS];
 
+// Setup function - runs once at the start
 void setup() { 
   FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
-}
-
-void loop() {
   FastLED.showColor(CRGB(255, 255, 255), 255);
   FastLED.show();
 }
+
+// Loop function - repeatedly called after setup()
+void loop() {}

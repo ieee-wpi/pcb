@@ -14,7 +14,7 @@ Before you compile and upload code to your board, you'll have to
 You're encouraged to modify and write custom code for your board! You can look at FastLED's examples for inspiration.
 
 ### Rainbow
-The `rainbow` folder contains a program that will run your board through FastLED's "cylon" pattern.
+The `rainbow` folder contains a program that will iterate back and forth across the LEDs, changing their hue. This is based on FastLED's "cylon" example code.
 
 ### Flashlight
 The `flashlight` folder contains a program that will turn all the LEDs on your board to white at their full brightness. Be careful, this is very bright and will use a lot of current!

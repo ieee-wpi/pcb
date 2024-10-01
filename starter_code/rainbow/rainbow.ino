@@ -1,49 +1,62 @@
-// Compile for Arduino Leonardo
+/*
+* Essentials of PCB Design
+* Rainbow: Iterates back and forth across the LEDs, changing their hue.
+* 
+* Track 1 boards compile for Arduino Leonardo
+* Requirements:
+* - FastLED library
+*/
+
 #include <FastLED.h>
 
-// How many leds in your strip?
+// You may need to change these for your board
 #define NUM_LEDS 27
-#define DATA_PIN 5  
+#define DATA_PIN 5
 
-// Define the array of leds
+// Delay after each loop iteration (ms)
+#define DELAY 50
+// Brightness of all LEDs (0-255)
+#define BRIGHTNESS 30
+
+// Array of LEDs
 CRGB leds[NUM_LEDS];
 
-void setup() { 
-	Serial.begin(57600);
-	Serial.println("resetting");
-	FastLED.addLeds<WS2812,DATA_PIN,RGB>(leds,NUM_LEDS);
-	FastLED.setBrightness(30);
+// Scales the brightness of all the LEDs
+void fadeall() {
+  for(int i = 0; i < NUM_LEDS; i++) { 
+    leds[i].nscale8(250);
+  }
 }
 
-void fadeall() { for(int i = 0; i < NUM_LEDS; i++) { leds[i].nscale8(250); } }
+// Setup function - runs once at the start
+void setup() { 
+	FastLED.addLeds<WS2812,DATA_PIN,RGB>(leds,NUM_LEDS);
+	FastLED.setBrightness(BRIGHTNESS);
+}
 
+// Loop function - repeatedly called after setup()
 void loop() { 
 	static uint8_t hue = 0;
-	Serial.print("x");
-	// First slide the led in one direction
-	for(int i = 0; i < NUM_LEDS; i++) {
-		// Set the i'th led to red 
-		leds[i] = CHSV(hue++, 255, 255);
-		// Show the leds
-		FastLED.show(); 
-		// now that we've shown the leds, reset the i'th led to black
-		// leds[i] = CRGB::Black;
-		fadeall();
-		// Wait a little bit before we loop around and do it again
-		delay(50);
-	}
-	Serial.print("x");
 
-	// Now go in the other direction.  
-	for(int i = (NUM_LEDS)-1; i >= 0; i--) {
-		// Set the i'th led to red 
+	// Slide the leds in one direction
+	for(int i = 0; i < NUM_LEDS; i++) {
+    // Advance hue of current LED and write to LEDs
 		leds[i] = CHSV(hue++, 255, 255);
-		// Show the leds
-		FastLED.show();
-		// now that we've shown the leds, reset the i'th led to black
-		// leds[i] = CRGB::Black;
+		FastLED.show(); 
+
+    // Fade all LEDs and wait
 		fadeall();
-		// Wait a little bit before we loop around and do it again
-		delay(50);
+		delay(DELAY);
+	}
+
+	// Slide the leds in the other direction.
+	for(int i = NUM_LEDS-1; i >= 0; i--) {
+    // Advance hue of current LED and write to LEDs
+		leds[i] = CHSV(hue++, 255, 255);
+		FastLED.show();
+
+    // Fade all LEDs and wait
+		fadeall();
+		delay(DELAY);
 	}
 }
