@@ -1,5 +1,5 @@
 ## Essentials of PCB Design
-Welcome! Here you can find all the materials for our PCB design class. We've run this at WPI in D24 and A24. This class is taught by @dgorbunov and @124274sashimi. You can reach us at gr-pcb@wpi.edu.
+Welcome! Here you can find all the materials for our PCB design class. We've run this at WPI in D24 and A24. This class is taught by [@dgorbunov](github.com/dgorbunov) and [@124274sashimi](github.com/124274sashimi). You can reach us at gr-pcb@wpi.edu.
 
 ### Lectures:
 | #  | Lecture				  |
