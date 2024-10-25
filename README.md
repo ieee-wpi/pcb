@@ -11,12 +11,12 @@ Repo Structure:
 | `starter_code`  | Starter code file(s)	    |
 
 ### Lectures:
-| #  | Lecture				  |
-| -- |-------- 				  |
-| 01 | Basics of PCBs		  |
-| 02 | Designing your Project |
-| 03 | Layout + Routing		  |
-| 04 | Working with KiCad     | 
+| #  | Lecture				    |
+| -- |-------- 				    |
+| 01 | PCB Basics 		    |
+| 02 | Project Design     |
+| 03 | Layout + Routing   |
+| 04 | Working with KiCad | 
 
 PDFs can be found in [/slides](https://github.com/IEEE-WPI/pcb/tree/main/slides).
 
