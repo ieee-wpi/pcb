@@ -16,7 +16,7 @@
 // Delay after each loop iteration (ms)
 #define DELAY 50
 // Brightness of all LEDs (0-255)
-#define BRIGHTNESS 30
+#define BRIGHTNESS 50
 
 // Array of LEDs
 CRGB leds[NUM_LEDS];

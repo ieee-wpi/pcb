@@ -26,4 +26,7 @@ void setup() {
 void loop() {
   FastLED.showColor(CRGB(255, 255, 255), 255);
   FastLED.show();
+  delay(50);
+  FastLED.clear();
+  delay(50);
 }
