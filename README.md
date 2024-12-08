@@ -1,7 +1,9 @@
-## Essentials of PCB Design
+# Essentials of PCB Design Course
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
 Welcome! Here you can find all the materials for our PCB design class. We've run this at WPI in D24 and A24. This class is taught by [@dgorbunov](https://github.com/dgorbunov) and [@124274sashimi](https://github.com/124274sashimi). You can reach us at gr-pcb@wpi.edu.
 
-Repo Structure:
+### Repo Structure:
 | Folder      	  | Contents		            |
 | --          	  |       -------- 			    |
 | `datasheets`    | Datasheets for major parts  |
@@ -31,4 +33,14 @@ To get started on your own board design, navigate to [/starter_board](https://gi
 
 ### Code
 To get started uploading code to your board, navigate to [/starter_code](https://github.com/IEEE-WPI/pcb/tree/main/starter_code) and read the instructions in the `README` file.
+
+## License
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
