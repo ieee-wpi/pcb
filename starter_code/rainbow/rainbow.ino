@@ -10,7 +10,7 @@
 #include <FastLED.h>
 
 // You may need to change these for your board
-#define NUM_LEDS 27
+#define NUM_LEDS 30
 #define DATA_PIN 5
 
 // Delay after each loop iteration (ms)
