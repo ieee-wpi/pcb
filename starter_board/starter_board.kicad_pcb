@@ -3254,7 +3254,7 @@
 		(layer "Edge.Cuts")
 		(uuid "fc312b24-5dae-46b8-9c8b-afa0178baa6a")
 	)
-	(gr_text "WPI IEEE | A24"
+	(gr_text "WPI IEEE | A25"
 		(at 78.1 151 90)
 		(layer "B.SilkS")
 		(uuid "e36da283-86e7-489c-a3f4-2c369e7c0d1c")
