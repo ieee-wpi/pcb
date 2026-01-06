@@ -1,7 +1,8 @@
 # Essentials of PCB Design Course
+
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-Materials for WPI's project-oriented PCB design course. We've run this ever year at WPI through the IEEE Student Branch for several years now. The materials were created by [@dgorbunov](https://github.com/dgorbunov) and [@124274sashimi](https://github.com/124274sashimi), though future instructors of the class will differ. You can reach us at gr-pcb@wpi.edu.
+WPI's project-oriented PCB design course. The course is a four part evening lecture series where students learn to layout and route an embedded system. Students then receive their manufactured boards after two weeks and assemble them. The class was created by Daniel Gorbunov and Hubert Liu and has been run every year through the WPI IEEE Student Branch, which helps organize and fund the class. You can reach us at gr-pcb@wpi.edu if you have questions.
 
 ### Materials
 | Folder      	  | Contents		            |
