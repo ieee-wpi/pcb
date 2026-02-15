@@ -1,8 +1,16 @@
-# Essentials of PCB Design Course
+# Essentials of PCB Design
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-WPI's project-oriented PCB design course. The course is a four part evening lecture series where students learn to layout and route an embedded system. Students then receive their manufactured boards after two weeks and assemble them. The class was created by Daniel Gorbunov and Hubert Liu and has been run every year through the WPI IEEE Student Branch, which helps organize and fund the class. You can reach us at gr-pcb@wpi.edu if you have questions.
+Project-oriented PCB design course taught at WPI. The course is a evening lecture series where students learn to layout and route an embedded system. Students then receive their boards and assemble them. The class was created by [Daniel Gorbunov](https://github.com/dgorbunov) and [Hubert Liu](https://github.com/124274sashimi) in 2024 and has been run every year since through the [IEEE WPI Student Branch](https://ieee.wpi.edu), which helps fund the class. You can reach us at [gr-pcb@wpi.edu](mailto:gr-pcb@wpi.edu) if you have questions.
+
+### Lectures
+| #  | Lecture				    |
+| -- |-------- 				    |
+| 01 | PCB Basics 		    |
+| 02 | Project Design     |
+| 03 | Layout + Routing   |
+| 04 | Working with KiCad |
 
 ### Materials
 | Folder      	  | Contents		            |
@@ -11,23 +19,17 @@ WPI's project-oriented PCB design course. The course is a four part evening lect
 | `sample_board`  | Sample board design         |
 | `slides`        | PDFs of slides	          	|
 | `starter_board` | Starter template design     | 
-| `starter_code`  | Starter code file(s)	    |
-
-### Lectures
-| #  | Lecture				    |
-| -- |-------- 				    |
-| 01 | PCB Basics 		    |
-| 02 | Project Design     |
-| 03 | Layout + Routing   |
-| 04 | Working with KiCad | 
+| `starter_code`  | Starter code	    |
 
 ### Lecture Recordings
+
+> Note: To access the lecture recordings, you must sign in with a WPI account. This is WPI's policy for Echo360 recordings.
+
 | Year  | Term  | Echo360      |
 | ----- | ----- | ------------ |
 | 2024 | A-Term | [Link](https://echo360.org/collection/4c2d5caf-a301-4c32-a2dd-bdd8c8c0b9d9/public) | 
 | 2025 | A-Term | [Link](https://echo360.org/collection/bc2acf2f-69f2-4496-9638-cb1b12c30087/public) |
-
-> To access the lecture recordings, you must sign in with a WPI account. This is WPI's policy for Echo360 recordings.
+| 2026 | C-Term | [Link](https://echo360.org/collection/0ecf9c61-5003-4061-9b4f-ee87c14e6741/public) |
 
 ## Getting Started
 Not sure where to get started on your design? You'll need to download and install [KiCad](https://www.kicad.org/download/). You'll also need the [Arduino IDE](https://www.arduino.cc/en/software) to program your board.
