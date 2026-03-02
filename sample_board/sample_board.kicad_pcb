@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -16,34 +16,34 @@
 	)
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(stackup
@@ -87,10 +87,11 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(grid_origin 82 135)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions yes)
 			(usegerberattributes no)
@@ -100,7 +101,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -108,16 +108,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue no)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
@@ -225,19 +228,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f2fbb2e8-fb5f-4624-8596-a3cd4297b2ca")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -400,7 +390,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "4a05ebd5-b905-45ad-ac7f-b22b66bd72d9")
 		)
@@ -418,7 +408,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 66 "Net-(D28-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -427,7 +417,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -436,7 +426,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 65 "Net-(D27-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -445,12 +435,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "9d286701-52ec-4884-b510-8e7fc63f821e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -487,19 +478,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "78a8de39-088e-4fd9-9eb0-be3c22e84ebd")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -669,7 +647,7 @@
 		(pad "1" smd roundrect
 			(at -1.025 0)
 			(size 1.15 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2173913043)
 			(net 8 "/RXLED")
 			(pinfunction "K")
@@ -679,13 +657,14 @@
 		(pad "2" smd roundrect
 			(at 1.025 0)
 			(size 1.15 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2173913043)
 			(net 9 "Net-(D2-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "5d567d42-fa21-4042-b503-b673f96d8f09")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -722,19 +701,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS647_Sx38"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "afd7b084-c106-4cd4-b793-f8231b6a2aa4")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -856,7 +822,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "7f527093-e68f-4460-adce-cf7a6d2cd003")
 		)
@@ -867,7 +833,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "1ea1e69a-f0e0-4bcd-a45c-b861ee157a87")
 		)
@@ -878,7 +844,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "6ad12593-1df3-4b97-9d41-c94e1de6c499")
 		)
@@ -896,7 +862,7 @@
 		(pad "1" smd roundrect
 			(at -2.625 -1.6 180)
 			(size 1.55 1)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "1")
@@ -906,7 +872,7 @@
 		(pad "1" smd roundrect
 			(at 2.625 -1.6 180)
 			(size 1.55 1)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "1")
@@ -916,7 +882,7 @@
 		(pad "2" smd roundrect
 			(at -2.625 1.6 180)
 			(size 1.55 1)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 44 "/BUTTON")
 			(pinfunction "2")
@@ -926,13 +892,14 @@
 		(pad "2" smd roundrect
 			(at 2.625 1.6 180)
 			(size 1.55 1)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 44 "/BUTTON")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "9dacda05-8b7b-4622-a4cb-e6746c4db22d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_PTS647Sx38.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -969,19 +936,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "48cf67fa-c48e-4027-bab4-05b9bef53c2f")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1144,7 +1098,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "5e8c18fd-f064-4f66-800f-c244d8f31e1b")
 		)
@@ -1162,7 +1116,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "Net-(D18-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -1171,7 +1125,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -1180,7 +1134,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "Net-(D17-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -1189,12 +1143,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "4282a0c4-5ecc-493a-8003-2c5c963eb9ea")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1231,19 +1186,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "be4d34f8-5ad1-465f-b383-39d8b292e043")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1406,7 +1348,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "727b1ef0-47d8-4554-a665-6471f66ba800")
 		)
@@ -1424,7 +1366,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 14 "Net-(D6-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -1433,7 +1375,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -1442,7 +1384,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 13 "Net-(D5-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -1451,12 +1393,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "86297c8a-d179-412a-ba7c-1b352eb6d471")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1493,19 +1436,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f4ce2db5-62cb-4830-9564-7ee8e4cf1343")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1668,7 +1598,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "14dae864-e979-4c1c-b473-f200767ba9e9")
 		)
@@ -1686,7 +1616,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 35 "Net-(D15-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -1695,7 +1625,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -1704,7 +1634,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "Net-(D14-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -1713,12 +1643,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "42102b86-f4ef-4d62-85c4-2f066821bc3b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1759,21 +1690,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d8ae4b51-40e1-41e0-8d49-632d63bac86a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1786,7 +1704,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1917,7 +1835,7 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2127659574)
 			(net 3 "Net-(U1-XTAL1)")
 			(pintype "passive")
@@ -1926,12 +1844,13 @@
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2127659574)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "d9fd7aa5-2f5f-4197-a6a9-53fc294f150d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1968,19 +1887,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f635ea7c-0599-4b5f-880c-73cd5d7dc917")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2143,7 +2049,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "0e44fe3f-8101-4d60-8524-86cdffe54c8c")
 		)
@@ -2161,7 +2067,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 61 "/D23_DOUT")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -2170,7 +2076,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -2179,7 +2085,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 60 "Net-(D22-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -2188,12 +2094,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "ce538e58-8446-4729-8754-74e987844970")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2234,21 +2141,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d9ec7d00-6828-4637-8db2-7e96b7a86ea8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2261,7 +2155,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2525,6 +2419,7 @@
 			(pintype "passive")
 			(uuid "0280efb4-2767-4394-8ff6-3393b44141e9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2562,19 +2457,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5703d4ff-a0bb-4903-89e2-832a1ad8a599")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2738,6 +2620,7 @@
 			)
 			(uuid "6b96cf96-20f8-47e2-912a-5817faf5d09e")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 		(layer "F.Cu")
@@ -2763,19 +2646,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a72bed5c-8fd1-4dc7-8017-299633acf515")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2938,7 +2808,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "2cbe035c-695d-4a74-bc3f-ddc853b40e5b")
 		)
@@ -2956,7 +2826,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 59 "Net-(D21-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -2965,7 +2835,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -2974,7 +2844,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 58 "Net-(D20-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -2983,12 +2853,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "a73b690d-930a-4f2a-a389-be140ce66dde")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3029,19 +2900,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "242c6678-8615-45f1-84eb-723dbb608a4e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -3073,50 +2931,6 @@
 		(sheetname "Root")
 		(sheetfile "sample_board.kicad_sch")
 		(attr smd)
-		(fp_circle
-			(center 0 0)
-			(end 0.4 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Adhes")
-			(uuid "c3c5f7c0-d4ba-43e0-830d-b698d07ba077")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 0.333333 0)
-			(stroke
-				(width 0.133333)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Adhes")
-			(uuid "45786c0a-31e5-40e3-bcc3-89eb15f6ab94")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 0.213333 0)
-			(stroke
-				(width 0.133333)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Adhes")
-			(uuid "2c4a881a-5339-454b-b90f-e9cfe9a0cfb7")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 0.093333 0)
-			(stroke
-				(width 0.186667)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Adhes")
-			(uuid "cb4f4b71-0aa2-4bcd-85cc-86a40aa93dba")
-		)
 		(fp_line
 			(start 2.7 -1.8)
 			(end -3.05 -1.8)
@@ -3146,6 +2960,50 @@
 			)
 			(layer "F.SilkS")
 			(uuid "43f6f136-5116-4218-a5e3-263965eabdc5")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.4 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Adhes")
+			(uuid "c3c5f7c0-d4ba-43e0-830d-b698d07ba077")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.333333 0)
+			(stroke
+				(width 0.133333)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Adhes")
+			(uuid "45786c0a-31e5-40e3-bcc3-89eb15f6ab94")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.213333 0)
+			(stroke
+				(width 0.133333)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Adhes")
+			(uuid "2c4a881a-5339-454b-b90f-e9cfe9a0cfb7")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.093333 0)
+			(stroke
+				(width 0.186667)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Adhes")
+			(uuid "cb4f4b71-0aa2-4bcd-85cc-86a40aa93dba")
 		)
 		(fp_line
 			(start 3.1 1.9)
@@ -3291,7 +3149,7 @@
 		(pad "1" smd rect
 			(at -1.85 0 180)
 			(size 2 2.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "Net-(U1-XTAL1)")
 			(pinfunction "1")
 			(pintype "passive")
@@ -3300,12 +3158,13 @@
 		(pad "2" smd rect
 			(at 1.85 0 180)
 			(size 2 2.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "Net-(U1-XTAL2)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "4d95dafd-c17a-4a68-905d-8f27365035c2")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_5032-2Pin_5.0x3.2mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3342,19 +3201,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f96528f0-584d-43b0-b04c-40c63da7662c")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3517,7 +3363,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "327d7e89-5ceb-4192-863e-e56f627e2c61")
 		)
@@ -3535,7 +3381,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 12 "Net-(D4-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -3544,7 +3390,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -3553,7 +3399,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 10 "Net-(D3-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -3562,12 +3408,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "7b484af2-79f9-4de5-96b4-ad93cac1c33a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3604,19 +3451,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ca9ae40a-8bfa-464f-9de8-55f0ea414fa1")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3779,7 +3613,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "630aec07-3478-4377-9505-8abb8dda4b4f")
 		)
@@ -3797,7 +3631,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 31 "Net-(D11-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -3806,7 +3640,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -3815,7 +3649,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "Net-(D10-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -3824,12 +3658,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "fd62ef58-34c0-42c3-8215-ae5924683bf9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3866,19 +3701,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7ea33d9c-2354-410b-a5e2-2a0f604b8d6e")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4185,6 +4007,7 @@
 			(pintype "passive")
 			(uuid "5e62db66-b1f5-4e90-b1a9-98a653c646d6")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4225,19 +4048,6 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9b7b9db4-ebfe-4c71-ab4b-a9e270d7d258")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -4274,7 +4084,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
 			(uuid "9e02f143-209d-436c-9217-7f7381a60aeb")
 		)
@@ -4290,7 +4100,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
 			(uuid "6f69ee79-58da-41ef-a412-850b6ed5ec4a")
 		)
@@ -4307,7 +4117,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
 			(uuid "6f3120a8-d12d-42f9-b73f-e43c87841d73")
 		)
@@ -4324,7 +4134,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
 			(uuid "dc7419fe-4895-4f43-a2b1-bafe7f86cc44")
 		)
@@ -4369,7 +4179,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
 			(uuid "af92d0c7-f008-4ebf-a83f-0bce32c460d9")
 		)
@@ -4423,10 +4233,11 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
 			(uuid "4b30fc86-c3fe-4c72-b004-3c8ec2d754c8")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
@@ -4456,21 +4267,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "968ad590-7c6d-46f8-b1d6-8ba34caa2e56")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4483,7 +4281,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4614,7 +4412,7 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2127659574)
 			(net 4 "Net-(U1-XTAL2)")
 			(pintype "passive")
@@ -4623,12 +4421,13 @@
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2127659574)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "9ef7be35-bd1f-4185-a6a0-1f6a3d52c4e4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4665,19 +4464,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "51a9e5e6-51dc-4f1f-bbf3-0ae98b9add34")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4827,7 +4613,7 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 180)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2127659574)
 			(net 5 "Net-(U1-UCAP)")
 			(pintype "passive")
@@ -4836,12 +4622,13 @@
 		(pad "2" smd roundrect
 			(at 1.0375 0 180)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2127659574)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "5d8d3314-3b1e-4ab2-9009-b9308e6b059b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4878,19 +4665,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c883f652-5e39-437d-ace8-a9151b7090d9")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5197,6 +4971,7 @@
 			(pintype "passive")
 			(uuid "5bab25bf-dc5b-428a-a26b-66966c787abc")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5233,19 +5008,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2d1c2629-4218-4ea6-a8d9-9217f5956cfd")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5395,7 +5157,7 @@
 		(pad "1" smd roundrect
 			(at -1 0)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 1 "+5V")
 			(pintype "passive")
@@ -5404,12 +5166,13 @@
 		(pad "2" smd roundrect
 			(at 1 0)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 19 "/RESET")
 			(pintype "passive")
 			(uuid "5f2906e9-a9d1-4f21-88e7-eae260fd191a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5450,21 +5213,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_Micro-B_GCT_USB3076-30-A"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d33e6cd3-1466-49d0-9c87-00423f1bda73")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5477,7 +5227,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5739,7 +5489,7 @@
 		(pad "1" smd rect
 			(at -1.3 -1.45 270)
 			(size 0.4 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 20 "Net-(J4-VBUS)")
 			(pinfunction "VBUS")
 			(pintype "power_out")
@@ -5748,7 +5498,7 @@
 		(pad "2" smd rect
 			(at -0.65 -1.45 270)
 			(size 0.4 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 21 "/U_D-")
 			(pinfunction "D-")
 			(pintype "bidirectional")
@@ -5757,7 +5507,7 @@
 		(pad "3" smd rect
 			(at 0 -1.45 270)
 			(size 0.4 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 22 "/U_D+")
 			(pinfunction "D+")
 			(pintype "bidirectional")
@@ -5766,7 +5516,7 @@
 		(pad "4" smd rect
 			(at 0.65 -1.45 270)
 			(size 0.4 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 23 "unconnected-(J4-ID-Pad4)")
 			(pinfunction "ID")
 			(pintype "passive+no_connect")
@@ -5775,7 +5525,7 @@
 		(pad "5" smd rect
 			(at 1.3 -1.45 270)
 			(size 0.4 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "power_out")
@@ -5795,7 +5545,7 @@
 		(pad "6" smd rect
 			(at -2.32 -1.03 270)
 			(size 1.15 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 72 "unconnected-(J4-Shield-Pad6)_3")
 			(pinfunction "Shield")
 			(pintype "passive+no_connect")
@@ -5804,7 +5554,7 @@
 		(pad "6" smd rect
 			(at -1.125 1.2 270)
 			(size 1.75 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 70 "unconnected-(J4-Shield-Pad6)_1")
 			(pinfunction "Shield")
 			(pintype "passive+no_connect")
@@ -5813,7 +5563,7 @@
 		(pad "6" smd rect
 			(at 1.125 1.2 270)
 			(size 1.75 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 71 "unconnected-(J4-Shield-Pad6)_2")
 			(pinfunction "Shield")
 			(pintype "passive+no_connect")
@@ -5822,7 +5572,7 @@
 		(pad "6" smd rect
 			(at 2.32 -1.03 270)
 			(size 1.15 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 74 "unconnected-(J4-Shield-Pad6)_5")
 			(pinfunction "Shield")
 			(pintype "passive+no_connect")
@@ -5839,6 +5589,7 @@
 			(pintype "passive+no_connect")
 			(uuid "5976e748-0e58-424a-b0c1-65652df38338")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Micro-B_GCT_USB3076-30-A.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5875,19 +5626,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f042f362-b123-42c9-9bb6-9607d2340f43")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6050,7 +5788,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "6c251c46-1d9a-464d-9969-c02a119f99b3")
 		)
@@ -6068,7 +5806,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 58 "Net-(D20-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -6077,7 +5815,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -6086,7 +5824,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 57 "Net-(D19-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -6095,12 +5833,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "462aa4ca-b689-4970-bf1c-56b67ed6cd5f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6137,19 +5876,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.3"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "009dea43-8d95-44ee-a310-5726a99d730f")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6512,7 +6238,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "ef2c6885-de9e-4688-9b6f-c45c6e2767d2")
 		)
@@ -6530,7 +6256,7 @@
 		(pad "1" smd roundrect
 			(at -2.2 0 180)
 			(size 3 1.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15625)
 			(net 1 "+5V")
 			(pintype "passive")
@@ -6539,12 +6265,13 @@
 		(pad "2" smd roundrect
 			(at 2.2 0 180)
 			(size 3 1.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15625)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "73727da2-c3ae-4df6-bf6b-1d1234f9ce11")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_5x5.3.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6581,19 +6308,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0cb7a224-64ba-431e-9d16-d28e1e88d2c7")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6756,7 +6470,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "1d2b7e4c-392c-424a-9a4e-f49b1a7e1b43")
 		)
@@ -6774,7 +6488,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "Net-(D14-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -6783,7 +6497,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -6792,7 +6506,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 33 "Net-(D13-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -6801,12 +6515,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "5698a4c5-755d-4495-bb2b-e611d714615c")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6843,19 +6558,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "eb41dfb6-484a-4373-b949-92dafb210a48")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7005,7 +6707,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 90)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 27 "/LED_DIN")
 			(pintype "passive")
@@ -7014,12 +6716,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 90)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 11 "Net-(D3-DIN)")
 			(pintype "passive")
 			(uuid "3916ca20-e36f-464b-b8ca-de1c643408fb")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7056,19 +6759,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "22849933-3e62-49d8-a352-6cfe568a3616")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7231,7 +6921,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "edaab000-3d7c-4d36-b595-c99e97a191d9")
 		)
@@ -7249,7 +6939,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "Net-(D17-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -7258,7 +6948,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -7267,7 +6957,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 36 "/D16_DOUT")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -7276,12 +6966,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "e958b189-1749-4f7d-970a-be0c35398bee")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7318,19 +7009,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d8ff8dbf-71bb-46dc-991a-55878ababa50")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7480,7 +7158,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 180)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 25 "/D+")
 			(pintype "passive")
@@ -7489,12 +7167,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 180)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 22 "/U_D+")
 			(pintype "passive")
 			(uuid "df3326ea-b409-413a-a299-c6f77a6186b2")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7531,19 +7210,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "872b330a-db0d-4f89-8471-922e348c822e")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7693,7 +7359,7 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 180)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2127659574)
 			(net 1 "+5V")
 			(pintype "passive")
@@ -7702,12 +7368,13 @@
 		(pad "2" smd roundrect
 			(at 1.0375 0 180)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2127659574)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "11f7d612-a6df-4d42-88a3-63ebc96e3cda")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7744,19 +7411,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "89969ccd-47c5-41e6-8221-69de6741f992")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7919,7 +7573,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "67cff6cc-175e-4510-b3cc-0c05986d337b")
 		)
@@ -7937,7 +7591,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 15 "Net-(D7-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -7946,7 +7600,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -7955,7 +7609,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 14 "Net-(D6-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -7964,12 +7618,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "041dafd2-ce0f-4c3d-950f-d1ac8dfd631f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8006,19 +7661,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ac9634a0-74df-4eb4-824e-c4a06063af71")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8181,7 +7823,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "efc84349-252c-44fb-86e6-9ed6a6303346")
 		)
@@ -8199,7 +7841,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 62 "Net-(D24-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -8208,7 +7850,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -8217,7 +7859,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 61 "/D23_DOUT")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -8226,12 +7868,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "8f7b2024-77d4-48ac-a48b-4fd1f183bcb4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8268,19 +7911,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4e2083aa-b417-4931-89cf-18006c38d7c5")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8430,7 +8060,7 @@
 		(pad "1" smd roundrect
 			(at -1 0)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 9 "Net-(D2-A)")
 			(pintype "passive")
@@ -8439,12 +8069,13 @@
 		(pad "2" smd roundrect
 			(at 1 0)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 1 "+5V")
 			(pintype "passive")
 			(uuid "bc96b482-210d-4549-b26b-14891aba2b3e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8481,19 +8112,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d43ca1a6-008f-419e-bdd6-9e51c2bcb83a")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8656,7 +8274,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "41f9fc36-3691-476b-8748-031e4da118a1")
 		)
@@ -8674,7 +8292,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 60 "Net-(D22-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -8683,7 +8301,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -8692,7 +8310,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 59 "Net-(D21-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -8701,12 +8319,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "44e8e84a-c7b7-4783-892d-3856f0e3aacb")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8743,19 +8362,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3409f88b-cbb0-433d-ba4a-d7ee484a3567")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8918,7 +8524,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "ae0680d3-693a-4db1-9603-5fb594081a83")
 		)
@@ -8936,7 +8542,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 29 "/D9_DOUT")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -8945,7 +8551,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -8954,7 +8560,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 28 "Net-(D8-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -8963,12 +8569,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "c44556d6-73cb-43da-bbe3-34eef59f9c25")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9005,19 +8612,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b95b68cc-9b89-4e79-b6a9-5152752a1a19")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9180,7 +8774,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "6b08627a-05bf-4c0f-8e85-69f6a7d5f607")
 		)
@@ -9198,7 +8792,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 36 "/D16_DOUT")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -9207,7 +8801,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -9216,7 +8810,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 35 "Net-(D15-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -9225,12 +8819,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "ed3b0bbe-df5d-4908-8616-f5cf1126a0e2")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9267,19 +8862,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5194fa26-4c5e-4a8a-b171-4d15e1e0718b")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9442,7 +9024,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "3b9e241f-79c2-4389-8b80-e6bca80922f5")
 		)
@@ -9460,7 +9042,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 64 "Net-(D26-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -9469,7 +9051,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -9478,7 +9060,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 63 "Net-(D25-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -9487,12 +9069,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "c042b399-9fd0-403e-8b12-b29db1fc8220")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9529,19 +9112,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "277c8cb5-b77c-44c9-a5bb-deef200afe99")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9704,7 +9274,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "c10d0d28-c7ea-4950-8be4-ddb667475875")
 		)
@@ -9722,7 +9292,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 67 "unconnected-(D29-DOUT-Pad1)")
 			(pinfunction "DOUT")
 			(pintype "output+no_connect")
@@ -9731,7 +9301,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -9740,7 +9310,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 66 "Net-(D28-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -9749,12 +9319,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "84979824-022a-4355-82f0-da8f36c6ef29")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9791,19 +9362,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5d99bee2-9d58-47be-9551-3c5e4c9fb681")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9966,7 +9524,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "c6a6a894-28ec-4bd6-b0f5-8000b5201ca1")
 		)
@@ -9984,7 +9542,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 28 "Net-(D8-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -9993,7 +9551,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -10002,7 +9560,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 15 "Net-(D7-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -10011,12 +9569,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "68870969-ac57-46f8-9289-aa2d69cf5876")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10053,19 +9612,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "91cf56b1-b860-45a5-95b2-33c899150129")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10215,7 +9761,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 180)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 26 "/D-")
 			(pintype "passive")
@@ -10224,12 +9770,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 180)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 21 "/U_D-")
 			(pintype "passive")
 			(uuid "b1eb54c1-ea74-40a4-bd5a-ceff0fa04895")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10266,19 +9813,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b660ce9f-4433-4fd7-a5ad-7a29ebfffb00")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10441,7 +9975,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "0eb7ce47-87a2-49dd-89c2-05f9b8969ac3")
 		)
@@ -10459,7 +9993,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 32 "Net-(D12-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -10468,7 +10002,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -10477,7 +10011,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 31 "Net-(D11-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -10486,12 +10020,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "ee8fe287-3474-4deb-9262-2a61b1925d13")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10528,19 +10063,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4a9def7d-ca48-47ad-8e23-5182c22e2c5e")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10690,7 +10212,7 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 180)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2127659574)
 			(net 37 "/AREF")
 			(pintype "passive")
@@ -10699,12 +10221,13 @@
 		(pad "2" smd roundrect
 			(at 1.0375 0 180)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2127659574)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "0ebff7d6-443b-44aa-9aab-ee6ed22ec237")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10741,19 +10264,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9bf93b33-7296-4941-b443-0e7627fa07d4")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10916,7 +10426,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "0974ec78-8323-4b82-9dcd-eea63c6a7534")
 		)
@@ -10934,7 +10444,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 10 "Net-(D3-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -10943,7 +10453,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -10952,7 +10462,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 11 "Net-(D3-DIN)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -10961,12 +10471,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "09370cf3-7bed-46f8-ae52-3cc899657268")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11003,19 +10514,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "43783694-e5b1-4c1e-aba7-25a4b58780d0")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -11178,7 +10676,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "0f955f8c-581a-49cc-bff0-cced4485666c")
 		)
@@ -11196,7 +10694,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "Net-(D10-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -11205,7 +10703,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -11214,7 +10712,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 29 "/D9_DOUT")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -11223,12 +10721,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "aa35f305-2216-4f01-91de-f4fefd8833b6")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11265,19 +10764,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "90f327d1-11bd-4e8a-ab04-192be1b8717a")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -11427,7 +10913,7 @@
 		(pad "1" smd roundrect
 			(at -1 0)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 7 "Net-(D1-A)")
 			(pintype "passive")
@@ -11436,12 +10922,13 @@
 		(pad "2" smd roundrect
 			(at 1 0)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 1 "+5V")
 			(pintype "passive")
 			(uuid "de0ea43f-9693-47f0-b1d4-2e6009a6dda8")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11478,19 +10965,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_QFP:TQFP-44_10x10mm_P0.8mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1f334121-7f13-4a8b-93b9-c9a15350e778")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -11720,7 +11194,7 @@
 		(pad "1" smd rect
 			(at -5.7 -4)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 44 "/BUTTON")
 			(pinfunction "PE6")
 			(pintype "bidirectional")
@@ -11729,7 +11203,7 @@
 		(pad "2" smd rect
 			(at -5.7 -3.2)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "UVCC")
 			(pintype "power_in")
@@ -11738,7 +11212,7 @@
 		(pad "3" smd rect
 			(at -5.7 -2.4)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 26 "/D-")
 			(pinfunction "D-")
 			(pintype "bidirectional")
@@ -11747,7 +11221,7 @@
 		(pad "4" smd rect
 			(at -5.7 -1.6)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 25 "/D+")
 			(pinfunction "D+")
 			(pintype "bidirectional")
@@ -11756,7 +11230,7 @@
 		(pad "5" smd rect
 			(at -5.7 -0.8)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "UGND")
 			(pintype "passive")
@@ -11765,7 +11239,7 @@
 		(pad "6" smd rect
 			(at -5.7 0)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 5 "Net-(U1-UCAP)")
 			(pinfunction "UCAP")
 			(pintype "passive")
@@ -11774,7 +11248,7 @@
 		(pad "7" smd rect
 			(at -5.7 0.8)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VBUS")
 			(pintype "input")
@@ -11783,7 +11257,7 @@
 		(pad "8" smd rect
 			(at -5.7 1.6)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 8 "/RXLED")
 			(pinfunction "PB0")
 			(pintype "bidirectional")
@@ -11792,7 +11266,7 @@
 		(pad "9" smd rect
 			(at -5.7 2.4)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 17 "/SCK")
 			(pinfunction "PB1")
 			(pintype "bidirectional")
@@ -11801,7 +11275,7 @@
 		(pad "10" smd rect
 			(at -5.7 3.2)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 18 "/MOSI")
 			(pinfunction "PB2")
 			(pintype "bidirectional")
@@ -11810,7 +11284,7 @@
 		(pad "11" smd rect
 			(at -5.7 4)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 16 "/MISO")
 			(pinfunction "PB3")
 			(pintype "bidirectional")
@@ -11819,7 +11293,7 @@
 		(pad "12" smd rect
 			(at -4 5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 51 "/D11")
 			(pinfunction "PB7")
 			(pintype "bidirectional")
@@ -11828,7 +11302,7 @@
 		(pad "13" smd rect
 			(at -3.2 5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 19 "/RESET")
 			(pinfunction "~{RESET}")
 			(pintype "input")
@@ -11837,7 +11311,7 @@
 		(pad "14" smd rect
 			(at -2.4 5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VCC")
 			(pintype "power_in")
@@ -11846,7 +11320,7 @@
 		(pad "15" smd rect
 			(at -1.6 5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
@@ -11855,7 +11329,7 @@
 		(pad "16" smd rect
 			(at -0.8 5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "Net-(U1-XTAL2)")
 			(pinfunction "XTAL2")
 			(pintype "output")
@@ -11864,7 +11338,7 @@
 		(pad "17" smd rect
 			(at 0 5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "Net-(U1-XTAL1)")
 			(pinfunction "XTAL1")
 			(pintype "input")
@@ -11873,7 +11347,7 @@
 		(pad "18" smd rect
 			(at 0.8 5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 46 "/D3")
 			(pinfunction "PD0")
 			(pintype "bidirectional")
@@ -11882,7 +11356,7 @@
 		(pad "19" smd rect
 			(at 1.6 5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 47 "/D2")
 			(pinfunction "PD1")
 			(pintype "bidirectional")
@@ -11891,7 +11365,7 @@
 		(pad "20" smd rect
 			(at 2.4 5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 48 "/D0")
 			(pinfunction "PD2")
 			(pintype "bidirectional")
@@ -11900,7 +11374,7 @@
 		(pad "21" smd rect
 			(at 3.2 5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 49 "/D1")
 			(pinfunction "PD3")
 			(pintype "bidirectional")
@@ -11909,7 +11383,7 @@
 		(pad "22" smd rect
 			(at 4 5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 6 "/TXLED")
 			(pinfunction "PD5")
 			(pintype "bidirectional")
@@ -11918,7 +11392,7 @@
 		(pad "23" smd rect
 			(at 5.7 4)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -11927,7 +11401,7 @@
 		(pad "24" smd rect
 			(at 5.7 3.2)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "AVCC")
 			(pintype "power_in")
@@ -11936,7 +11410,7 @@
 		(pad "25" smd rect
 			(at 5.7 2.4)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 50 "/D4")
 			(pinfunction "PD4")
 			(pintype "bidirectional")
@@ -11945,7 +11419,7 @@
 		(pad "26" smd rect
 			(at 5.7 1.6)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 52 "unconnected-(U1-PD6-Pad26)")
 			(pinfunction "PD6")
 			(pintype "bidirectional+no_connect")
@@ -11954,7 +11428,7 @@
 		(pad "27" smd rect
 			(at 5.7 0.8)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 68 "unconnected-(U1-PD7-Pad27)")
 			(pinfunction "PD7")
 			(pintype "bidirectional+no_connect")
@@ -11963,7 +11437,7 @@
 		(pad "28" smd rect
 			(at 5.7 0)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 53 "/D8")
 			(pinfunction "PB4")
 			(pintype "bidirectional")
@@ -11972,7 +11446,7 @@
 		(pad "29" smd rect
 			(at 5.7 -0.8)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "/D9")
 			(pinfunction "PB5")
 			(pintype "bidirectional")
@@ -11981,7 +11455,7 @@
 		(pad "30" smd rect
 			(at 5.7 -1.6)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 69 "/D10")
 			(pinfunction "PB6")
 			(pintype "bidirectional")
@@ -11990,7 +11464,7 @@
 		(pad "31" smd rect
 			(at 5.7 -2.4)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 27 "/LED_DIN")
 			(pinfunction "PC6")
 			(pintype "bidirectional")
@@ -11999,7 +11473,7 @@
 		(pad "32" smd rect
 			(at 5.7 -3.2)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 45 "/D13")
 			(pinfunction "PC7")
 			(pintype "bidirectional")
@@ -12008,7 +11482,7 @@
 		(pad "33" smd rect
 			(at 5.7 -4)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "~{HWB}/PE2")
 			(pintype "bidirectional")
@@ -12017,7 +11491,7 @@
 		(pad "34" smd rect
 			(at 4 -5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VCC")
 			(pintype "passive")
@@ -12026,7 +11500,7 @@
 		(pad "35" smd rect
 			(at 3.2 -5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -12035,7 +11509,7 @@
 		(pad "36" smd rect
 			(at 2.4 -5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 38 "/A0")
 			(pinfunction "PF7")
 			(pintype "bidirectional")
@@ -12044,7 +11518,7 @@
 		(pad "37" smd rect
 			(at 1.6 -5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 39 "/A1")
 			(pinfunction "PF6")
 			(pintype "bidirectional")
@@ -12053,7 +11527,7 @@
 		(pad "38" smd rect
 			(at 0.8 -5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 40 "/A2")
 			(pinfunction "PF5")
 			(pintype "bidirectional")
@@ -12062,7 +11536,7 @@
 		(pad "39" smd rect
 			(at 0 -5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 41 "/A3")
 			(pinfunction "PF4")
 			(pintype "bidirectional")
@@ -12071,7 +11545,7 @@
 		(pad "40" smd rect
 			(at -0.8 -5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 42 "/A4")
 			(pinfunction "PF1")
 			(pintype "bidirectional")
@@ -12080,7 +11554,7 @@
 		(pad "41" smd rect
 			(at -1.6 -5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 43 "/A5")
 			(pinfunction "PF0")
 			(pintype "bidirectional")
@@ -12089,7 +11563,7 @@
 		(pad "42" smd rect
 			(at -2.4 -5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 37 "/AREF")
 			(pinfunction "AREF")
 			(pintype "passive")
@@ -12098,7 +11572,7 @@
 		(pad "43" smd rect
 			(at -3.2 -5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -12107,12 +11581,13 @@
 		(pad "44" smd rect
 			(at -4 -5.7 90)
 			(size 1.5 0.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "AVCC")
 			(pintype "passive")
 			(uuid "c8833cb2-ebae-482d-af03-e41cbe58bbb4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Package_QFP.3dshapes/TQFP-44_10x10mm_P0.8mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -12149,19 +11624,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1514a0dc-942c-4df7-936e-b43e46a5d6ac")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -12324,7 +11786,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "978326be-f45d-4e06-a040-094a1bdf5607")
 		)
@@ -12342,7 +11804,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 13 "Net-(D5-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -12351,7 +11813,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -12360,7 +11822,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 12 "Net-(D4-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -12369,12 +11831,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "7abbb108-cb04-4afa-bded-4e7708fe4ca2")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -12411,19 +11874,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9a3169c2-f147-41da-9eaf-b65728f1abe6")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -12593,7 +12043,7 @@
 		(pad "1" smd roundrect
 			(at -1.025 0)
 			(size 1.15 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2173913043)
 			(net 6 "/TXLED")
 			(pinfunction "K")
@@ -12603,13 +12053,14 @@
 		(pad "2" smd roundrect
 			(at 1.025 0)
 			(size 1.15 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2173913043)
 			(net 7 "Net-(D1-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "cc33e128-f3ed-4303-889b-b5c5da46e425")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -12646,19 +12097,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1d312b17-d30e-4915-ab48-8843c2420092")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -12821,7 +12259,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "ac4c09da-26d9-449d-8bab-e833f161937d")
 		)
@@ -12839,7 +12277,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 33 "Net-(D13-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -12848,7 +12286,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -12857,7 +12295,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 32 "Net-(D12-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -12866,12 +12304,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "44aad3b4-cd77-41c2-9cbe-313ea2522559")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -12908,19 +12347,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7ab782ac-5e99-4971-8edc-5447c2ef4d5c")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -13083,7 +12509,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "2f91ff89-1e56-4955-bd35-16af1d33f20f")
 		)
@@ -13101,7 +12527,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 65 "Net-(D27-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -13110,7 +12536,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -13119,7 +12545,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 64 "Net-(D26-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -13128,12 +12554,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "478df920-3759-4939-899e-73993738bee8")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -13170,19 +12597,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "65675e82-b758-482f-ad0e-0090d84a0934")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -13345,7 +12759,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "1548cbb8-d2d0-4258-8823-da367fc0d4c8")
 		)
@@ -13363,7 +12777,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 57 "Net-(D19-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -13372,7 +12786,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -13381,7 +12795,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "Net-(D18-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -13390,12 +12804,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "57db5945-5457-43fc-9b15-7b3e8772f7ec")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -13432,19 +12847,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "18e486ae-bd4b-4539-8a15-4dbcb28e5d20")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -13607,7 +13009,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "8b7ae45a-8fb5-4910-9f6d-65dd290cd3a4")
 		)
@@ -13625,7 +13027,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 63 "Net-(D25-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -13634,7 +13036,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -13643,7 +13045,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 62 "Net-(D24-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -13652,12 +13054,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "f8e9ac47-0a20-4e07-96d5-6e08a2449391")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -13677,7 +13080,7 @@
 			(width 0.15)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "B.SilkS")
 		(uuid "0dd898ea-c51a-4a78-81cd-2d21cac234e5")
 	)
@@ -13688,7 +13091,7 @@
 			(width 0.15)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "B.SilkS")
 		(uuid "0efaa72f-3871-42be-8aea-656524d6a534")
 	)
@@ -13699,7 +13102,7 @@
 			(width 0.15)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "B.SilkS")
 		(uuid "26c9ee57-bcae-4e27-b726-29b60047c6e7")
 	)
@@ -13710,7 +13113,7 @@
 			(width 0.15)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "B.SilkS")
 		(uuid "2d150840-c261-4821-af9e-d458fd480d29")
 	)
@@ -13721,7 +13124,7 @@
 			(width 0.15)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "B.SilkS")
 		(uuid "6f8fc8e9-d35d-4aac-9905-0039875aa323")
 	)
@@ -13732,35 +13135,9 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "fc312b24-5dae-46b8-9c8b-afa0178baa6a")
-	)
-	(gr_text "rev2 | 10.06.24"
-		(at 78.1 151 90)
-		(layer "B.SilkS" knockout)
-		(uuid "e36da283-86e7-489c-a3f4-2c369e7c0d1c")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.2)
-				(bold yes)
-			)
-			(justify left bottom mirror)
-		)
-	)
-	(gr_text "github.com/ieee-wpi"
-		(at 78.1 129.5 90)
-		(layer "B.SilkS" knockout)
-		(uuid "ebc4e300-908d-4a67-a3d4-8cc35004fb3c")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.2)
-				(bold yes)
-			)
-			(justify left bottom mirror)
-		)
 	)
 	(gr_text "."
 		(at 59.45 152.25 0)
@@ -14061,6 +13438,32 @@
 				(thickness 0.15)
 			)
 			(justify left bottom)
+		)
+	)
+	(gr_text "rev2 | 10.06.24"
+		(at 78.1 151 90)
+		(layer "B.SilkS" knockout)
+		(uuid "e36da283-86e7-489c-a3f4-2c369e7c0d1c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "github.com/ieee-wpi"
+		(at 78.1 129.5 90)
+		(layer "B.SilkS" knockout)
+		(uuid "ebc4e300-908d-4a67-a3d4-8cc35004fb3c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom mirror)
 		)
 	)
 	(segment
@@ -21175,4 +20578,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
