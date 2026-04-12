@@ -1,5 +1,5 @@
-## Starter Code
-This folder contains the starter code for the Track 1 board.
+## Code Examples
+This folder contains several code examples for the Track 1 board.
 
 ### Instructions
 In order to program your board, you'll have to first flash a bootloader to your board (this will be done in class for you). Then, you can connect a USB cable to your board, compile, and upload one of the `.ino` files in this folder using the Arduino IDE. You can change and reupload the Arduino code at any time after the bootloader is flashed! 

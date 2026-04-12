@@ -38,7 +38,7 @@ Not sure where to get started on your design? You'll need to download and instal
 To get started on your own board design, navigate to [starter_board](https://github.com/IEEE-WPI/pcb/tree/main/starter_board) and read the instructions in the `README` file.
 
 ### Code
-To get started uploading code to your board, navigate to [starter_code](https://github.com/IEEE-WPI/pcb/tree/main/starter_code) and read the instructions in the `README` file.
+To get started uploading code to your board, navigate to [code](https://github.com/IEEE-WPI/pcb/tree/main/code) and read the instructions in the `README` file.
 
 ## License
 This work is licensed under a
