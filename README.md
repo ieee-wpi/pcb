@@ -19,7 +19,7 @@ Project-oriented PCB design course taught at WPI. The course is a evening lectur
 | `sample_board`  | Sample board design         |
 | `slides`        | PDFs of slides	          	|
 | `starter_board` | Starter template design     | 
-| `starter_code`  | Starter code	    |
+| `code`        | Code examples	    |
 
 ### Lecture Recordings
 
