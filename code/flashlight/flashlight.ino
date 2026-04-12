@@ -10,7 +10,7 @@
 
 #include <FastLED.h>
 
-// You may need to change these for your board
+// Board-specific pins
 #define NUM_LEDS 27
 #define DATA_PIN 5
 
@@ -26,7 +26,4 @@ void setup() {
 void loop() {
   FastLED.showColor(CRGB(255, 255, 255), 255);
   FastLED.show();
-  delay(50);
-  FastLED.clear();
-  delay(50);
 }
